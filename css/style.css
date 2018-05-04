@@ -1,0 +1,609 @@
+body,
+html {
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    /*    background-color: #282e34 */
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 12px 36px;
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+#logo2 {
+    height: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    z-index: 200;
+    /*        padding: 0!important;*/
+}
+
+.compp {
+    position: relative;
+    z-index: 1;
+}
+
+.logo-rotate .label {
+    position: absolute;
+    display: block;
+    background-color: #333;
+    top: -60px;
+    width: 110px;
+    height: 111px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 1s;
+
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    transition: 1s;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    /*    float: right;*/
+    width: 100%;
+
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 120px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.section h2 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin: 0 40%;
+}
+
+.section-light h2 {
+    border-bottom: 3px solid #666;
+}
+
+.section-dark h2 {
+    border-bottom: 3px solid #ddd;
+}
+
+.flex-box {
+    display: flex;
+    /*    margin: 10px;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1,
+.p2,
+.p3 {
+    width: 29%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.p-45 {
+    width: 45%;
+}
+
+.pic {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.pic2 {
+    width: 90%;
+    height: 300px;
+    margin: 20px 10px;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picp {
+    height: 250px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex-box.omnie {
+    padding: 40px 0;
+    flex-direction: column;
+}
+
+.p1.p-45 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.p2.p-45.about {
+    width: 60%;
+    font-size: 18px;
+}
+
+.p2.p-45.about p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.picture1 {
+    background-image: url(../img/p1.jpeg);
+}
+
+
+.picture2 {
+    background-image: url(../img/p2.jpeg);
+}
+
+
+.picture3 {
+    background-image: url(../img/p3.jpeg);
+}
+
+.picture4 {
+    background-image: url(../img/p3.jpg);
+    border-radius: 50%;
+
+}
+
+.p-height {
+    height: 140px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.p-show {
+    overflow: visible;
+}
+
+.p1 button,
+.p2 button,
+.p3 button {
+    width: 40%;
+    background: #444;
+    color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.p1 button:hover,
+.p2 button:hover,
+.p3 button:hover {
+    background: #111;
+}
+
+.p1 button:active,
+.p2 button:active,
+.p3 button:active {
+    background: #444;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url(../img/1.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(../img/2.jpg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(../img/3.jpg);
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ptext .border {
+    color: #333;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+.about p {
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+
+.contact {
+    padding: 50px 0 0 0;
+}
+
+.section-dark.contact {
+    padding: 50px
+}
+
+
+#map {
+    width: 50%;
+    height: 550px;
+}
+
+.contact .flex-box {
+    margin-top: 50px;
+}
+
+
+form {
+    width: 260px;
+    /* ustawiamy szerokość formularza */
+    margin: 0 auto;
+    /* jeżeli nasz formularz ma ustawioną szerokość wyśrodkowujemy go */
+    background-color: #ccc;
+    /* dodajemy kolor tła naszemu formularzowi */
+    border: 2px solid #ccc;
+    /* dodajemy obramowanie o szerokości 2px */
+    border-radius: 10px;
+    /* zaokrąglamy tło naszego formularza */
+    padding: 20px;
+    /* dodajemy margines wewnątrz naszego formularza */
+    margin-top: 5px;
+    /* dodajemy margines górny naszego formularza */
+}
+
+form label {
+    display: block;
+    /* ustawiamy by label rozpoczynał się od nowej linii*/
+    margin-bottom: 5px;
+    /* dodajemy margines dolny */
+    font-weight: bold;
+    /* pogrubiamy czcionkę */
+    text-transform: uppercase;
+    /* zamieniamy wszystkie litery na duże */
+    font-size: 12px;
+    /* ustawiamy wielkość czcionki */
+    color: #555555;
+    /* ustawiamy kolor czcionki */
+}
+
+form textarea,
+form input {
+    background: #ccc;
+    padding: 5px;
+    /* dodajemy margines wewnątrz naszego pola */
+    border-radius: 3px;
+    /* dodajemy zaokraglone rogi */
+    border: 1px solid #666;
+    /* dodajemy obramowanie */
+    margin-bottom: 25px;
+    /* dodajemy margines dolny */
+    width: 245px;
+    /* ustalamy szerokość */
+}
+
+form input#submit {
+    width: 255px;
+    /* ustalamy szerokość */
+    cursor: pointer;
+    /* zmieniamy kursor */
+    margin-bottom: 0px;
+    /* resetujemy margines dolny */
+    background: #999;
+}
+
+form p.copy {
+    color: #555555;
+    /* ustawiamy kolor czcionki */
+    margin-bottom: 0px;
+    /* resetujemy margines dolny */
+    font-size: 12px;
+    /* ustawiamy rozmiar czcionki */
+    text-align: center;
+    /* wyśrodkowywujemy tekst */
+}
+
+form p.copy a {
+    color: #555555;
+    /* ustawiamy kolor czcionki */
+    text-decoration: none;
+    /* usuwamy podkreślenie linku */
+    font-weight: bold;
+    /* pogrubiamy czcionkę */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    color: #fff;
+}
+
+.wyksztalcenie,
+.kursy,
+.doswiadczenie {
+    display: flex;
+    /*    margin: 10px;*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 3px solid #ddd;
+}
+
+.left {
+    width: 35%;
+}
+
+.right {
+    width: 65%;
+}
+
+.part h3 {
+    padding: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.small {
+    text-align: left;
+    font-size: 16px
+}
+
+.part p {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0
+}
+
+.part {
+    margin: 5px 0 40px;
+}
+
+a.cv-pdf:link,
+a.cv-pdf:visited,
+a.cv-pdf:hover,
+a.cv-pdf:active {
+    color: #999;
+    text-decoration: none;
+}
+
+a.cv-pdf:hover {
+    color: #fff;
+}
+
+@media(max-width: 1075px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media(max-width: 780px) {
+
+    .logo-rotate {
+        display: none;
+    }
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        padding: 0;
+    }
+
+    nav.black,
+    .showing {
+        max-height: 30em;
+        background-color: #000;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .section {
+        padding: 5%;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .logo-rotate .label {
+        display: none;
+    }
+
+    .p1,
+    .p2,
+    .p3 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .compp {
+        text-align: center;
+
+    }
+
+    .section h2 {
+
+        margin: 0 15% 10% 15%;
+    }
+
+    .section button {
+        margin-bottom: 35px
+    }
+
+    #map {
+        display: none;
+    }
+
+    .wyksztalcenie,
+    .kursy,
+    .doswiadczenie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        width: 95%;
+    }
+    .right {
+        width: 95%;
+    }
+    .left h3 {
+        text-align: left;
+    }
+
+    .ptext .border {
+        font-size: 35px;
+    }
+}
+
+
+@media(min-width: 780px) and (max-width: 1250px) {
+    .section h2 {
+        margin: 0 32%;
+    }
+
+    .section-portfolio .p1 .p-height,
+    .section-portfolio .p2 .p-height,
+    .section-portfolio .p3 .p-height {
+        margin-left: 25px;
+        margin-right: 25px
+    }
+    /*
+    .section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+*/
+    .p1,
+    .p2,
+    .p3 {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact h2 {
+        margin-bottom: 40px;
+    }
+    #map {
+        margin: 10px;
+        width: 40%
+    }
+}
+
+@media(max-width: 500px) {
+    .ptext .border {
+        font-size: 25px;
+    }
+}

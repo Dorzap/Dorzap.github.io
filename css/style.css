@@ -329,21 +329,12 @@ nav ul li a {
 }
 
 
+
 form {
-    width: 260px;
-    /* ustawiamy szerokość formularza */
+    width: 360px;
     margin: 0 auto;
-    /* jeżeli nasz formularz ma ustawioną szerokość wyśrodkowujemy go */
-    background-color: #ccc;
-    /* dodajemy kolor tła naszemu formularzowi */
-    border: 2px solid #ccc;
-    /* dodajemy obramowanie o szerokości 2px */
-    border-radius: 10px;
-    /* zaokrąglamy tło naszego formularza */
     padding: 20px;
-    /* dodajemy margines wewnątrz naszego formularza */
     margin-top: 5px;
-    /* dodajemy margines górny naszego formularza */
 }
 
 form label {
@@ -351,19 +342,18 @@ form label {
     /* ustawiamy by label rozpoczynał się od nowej linii*/
     margin-bottom: 5px;
     /* dodajemy margines dolny */
-    font-weight: bold;
-    /* pogrubiamy czcionkę */
     text-transform: uppercase;
     /* zamieniamy wszystkie litery na duże */
-    font-size: 12px;
+    font-size: 16px;
     /* ustawiamy wielkość czcionki */
-    color: #555555;
+    color: #fff;
     /* ustawiamy kolor czcionki */
+    text-align: left;
 }
 
 form textarea,
 form input {
-    background: #ccc;
+    background: #fff;
     padding: 5px;
     /* dodajemy margines wewnątrz naszego pola */
     border-radius: 3px;
@@ -372,18 +362,23 @@ form input {
     /* dodajemy obramowanie */
     margin-bottom: 25px;
     /* dodajemy margines dolny */
-    width: 245px;
+    width: 360px;
     /* ustalamy szerokość */
+    font-size: 16px;
+    font-family: "lato", sans-serif;
 }
 
 form input#submit {
-    width: 255px;
+    width: 372px;
     /* ustalamy szerokość */
     cursor: pointer;
     /* zmieniamy kursor */
     margin-bottom: 0px;
     /* resetujemy margines dolny */
     background: #999;
+    font-size: 16px;
+    font-family: "lato", sans-serif;
+
 }
 
 form p.copy {

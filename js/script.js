@@ -49,6 +49,7 @@ function newDate() {
     let element = d.getFullYear();
     document.querySelector('.year').innerHTML = element;
 }
+
 newDate();
 
 //map

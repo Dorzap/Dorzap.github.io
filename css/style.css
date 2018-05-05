@@ -332,10 +332,9 @@ nav ul li a {
 
 
 form {
-    width: 360px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form label {
@@ -363,14 +362,14 @@ form input {
     /* dodajemy obramowanie */
     margin-bottom: 25px;
     /* dodajemy margines dolny */
-    width: 360px;
+    width: 70%;
     /* ustalamy szerokość */
     font-size: 16px;
     font-family: "lato", sans-serif;
 }
 
 form input#submit {
-    width: 372px;
+    width: 72%;
     /* ustalamy szerokość */
     cursor: pointer;
     /* zmieniamy kursor */
@@ -601,5 +600,12 @@ a.cv-pdf:hover {
 @media(max-width: 500px) {
     .ptext .border {
         font-size: 25px;
+    }
+    form textarea,
+    form input {
+        width: 90%;
+    }
+    form input#submit {
+        width: 94%;
     }
 }

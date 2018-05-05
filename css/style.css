@@ -301,9 +301,11 @@ nav ul li a {
     font-size: 50px;
 }
 
+/*
 .ptext .border div:first-child {
     margin-bottom: 18px;
 }
+*/
 
 .ptext .border.trans {
     background-color: transparent;

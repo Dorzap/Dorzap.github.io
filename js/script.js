@@ -42,6 +42,15 @@ $(document).ready(function () {
     });
 });
 
+//date in footer
+
+function newDate() {
+    let d = new Date();
+    let element = d.getFullYear();
+    document.querySelector('.year').innerHTML = element;
+}
+newDate();
+
 //map
 function initMap() {
     // Styles a map in night mode.

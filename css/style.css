@@ -575,6 +575,10 @@ a.cv-pdf:hover {
     .ptext .border {
         font-size: 35px;
     }
+
+    nav ul li a {
+        color: #fff;
+    }
 }
 
 

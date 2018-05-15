@@ -6,12 +6,13 @@ $(document).ready(function () {
     });
 
     $(window).on("scroll", function () {
+        var wwidth = $(window).width();
         if ($(window).scrollTop()) {
             $('nav').addClass('black');
             //        $('ul li:nth-child(3)').addClass('logo-rotate');
             $('ul li a span:nth-child(2)').addClass('rotate');
             $('.change-color').css('color', 'white');
-        } else {
+        } else if (wwidth > 780) {
             $('nav').removeClass('black');
             //         $('ul li:nth-child(3)').removeClass('logo-rotate');
             $('ul li a span:nth-child(2)').removeClass('rotate');

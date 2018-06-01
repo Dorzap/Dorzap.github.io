@@ -284,7 +284,7 @@ nav ul li a {
 
 .ptext {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -294,11 +294,24 @@ nav ul li a {
     font-weight: bold;
 }
 
+.ptext p {
+    font-weight: bold;
+    color: #c78590;
+    font-size: 55px;
+    text-shadow: 2px 2px 4px #333;
+}
+
+.typing {
+    font-weight: 400;
+    font-size: 45px;
+    text-transform: lowercase;
+    padding-left: 20px;
+    font-family: 'Special Elite', cursive;
+}
+
 .ptext .border {
     color: #333;
     padding: 4px 10px;
-    font-weight: bold;
-    font-size: 50px;
 }
 
 .border p {
@@ -307,7 +320,7 @@ nav ul li a {
 }
 
 .border {
-    line-height: 1;
+    line-height: 1.5;
 }
 
 /*

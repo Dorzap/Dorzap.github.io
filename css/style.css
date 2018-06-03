@@ -336,6 +336,15 @@ nav ul li a {
 .about p {
     margin-bottom: 40px;
     align-items: center;
+    max-width: 700px;
+}
+
+.about {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
@@ -351,6 +360,7 @@ nav ul li a {
 #map {
     width: 50%;
     height: 550px;
+    max-width: 550px;
 }
 
 .contact .flex-box {
@@ -377,6 +387,11 @@ form label {
     color: #fff;
     /* ustawiamy kolor czcionki */
     text-align: left;
+    display: none;
+}
+
+form textarea {
+    height: 150px;
 }
 
 form textarea,
@@ -391,13 +406,17 @@ form input {
     margin-bottom: 25px;
     /* dodajemy margines dolny */
     width: 70%;
+    max-width: 500px;
     /* ustalamy szerokość */
     font-size: 16px;
     font-family: "lato", sans-serif;
 }
 
 form input#submit {
-    width: 72%;
+    width: 220px;
+    height: 40px;
+    display: block;
+    border: none;
     /* ustalamy szerokość */
     cursor: pointer;
     /* zmieniamy kursor */
@@ -448,19 +467,24 @@ footer {
     display: flex;
     /*    margin: 10px;*/
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: left;
     margin-top: 30px;
     padding-top: 30px;
     border-top: 3px solid #ddd;
+    justify-content: center;
+    align-content: center;
 }
 
 .left {
-    width: 35%;
+    width: 15%;
 }
 
 .right {
-    width: 65%;
+    width: 40%;
+}
+
+.left h3 {
+    text-align: left;
 }
 
 .part h3 {
@@ -496,9 +520,37 @@ a.cv-pdf:hover {
     color: #fff;
 }
 
+@media(max-width: 1750px) {
+    .left {
+        width: 20%;
+    }
+    .right {
+        width: 50%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .left {
+        width: 25%;
+    }
+    .right {
+        width: 60%;
+    }
+}
+
+
 @media(max-width: 1075px) {
     .logo {
         display: none;
+    }
+}
+
+@media(max-width: 950px) {
+    .left {
+        width: 35%;
+    }
+    .right {
+        width: 60%;
     }
 }
 
@@ -630,15 +682,19 @@ a.cv-pdf:hover {
 }
 
 @media(max-width: 500px) {
-    .ptext .border {
-        font-size: 25px;
+    .ptext .border p {
+        font-size: 35px;
+    }
+
+    .ptext .border .typing {
+        font-size: 30px;
     }
     form textarea,
     form input {
-        width: 90%;
+        width: 100%;
     }
     form input#submit {
-        width: 94%;
+        width: 60%;
     }
 
     .p2.p-45.about {
